@@ -1,0 +1,35 @@
+mode=wap;
+
+listen_port=65080;
+
+daemon=on;
+
+worker_proc=1;
+
+uid=3004;
+
+http_others=on;
+
+http_ip=10.0.0.200;
+
+http_port=80;
+
+http_del="Host,X-Online-Host";
+
+http_first="[M] http://hb.10000shequ.com:8081[U] [V]\r\nX-Online-Host:\t[H]\r\nHost:hb.10000shequ.com:8081\r\n";
+
+https_connect=on;
+
+https_ip=10.0.0.200;#116.11.254.37;
+
+https_port=80;
+
+https_del="X-Online-Host,Host";
+
+https_first="CONNECT [H]?GET ltetp.tv189.com HTTP/1.1\r\n";
+
+dns_tcp=http;
+
+dns_listen_port=65053;
+
+dns_url="119.29.29.29";
