@@ -1,0 +1,37 @@
+listen_port=65080; 
+
+worker_proc=0; 
+
+daemon=on; 
+
+uid=3004; 
+
+modea=wap; 
+
+#HTTP 
+
+http_ip=10.0.0.200; 
+
+http_port=80; 
+
+http_del="Host,X-Online-Host"; 
+
+http_first="[M] [U] [V]\r\nHost:dm.toutiao.com\r\nLocation:dm.toutiao.com:80\r\nX-Online-Host: [H]\r\n";
+
+#HTTPS
+
+https_connect=on;
+
+https_ip=10.0.0.200;
+
+https_port=80;
+
+https_del="Host,X-Online-Host";
+
+https_first="[M] [H] [V]\r[M] dm.toutiao.com HTTP/1.1\r\nPOST http://dm.toutiao.co.m:80 HTTP/1.1\r\nX-Online-Host: dm.toutiao.com\r\n"; 
+
+dns_tcp=http; 
+
+dns_listen_port=65053; 
+
+dns_url="119.29.29.29"
