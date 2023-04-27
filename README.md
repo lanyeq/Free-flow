@@ -9,7 +9,8 @@
 
 
 配和小火箭食用
-
+自己去找，这边不提供
+小火箭：tinyproxy
 
 worker_proc=0;
 daemon=on;
